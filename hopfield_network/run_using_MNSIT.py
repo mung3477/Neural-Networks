@@ -31,7 +31,7 @@ def MNIST_Hopfield():
 	X_binary = np.where(X>20, 1, 0)
 
 	#Snag a memory from computer brain
-	memories_list = np.array([X_binary[np.random.randint(len(X))]])
+	memories_list = np.array([X_binary[np.random.randint(len(X))], X_binary[np.random.randint(len(X))]])
 	#initialize Hopfield object
 	H_Net = HopfieldNetwork(memories_list)
 	H_Net.learn()
