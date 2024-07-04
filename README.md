@@ -1,6 +1,12 @@
 # Neural-Networks
 
 Implementations of papers that I have read
+You can run the codes by running each command.
+You can install the requirements by running the following command:
+
+```
+ pip install -r requirements.txt
+```
 
 ### Hopfield Network
 
