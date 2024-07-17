@@ -24,6 +24,6 @@ class RBM:
 		self.weights += torch.mm(p_h.T, v) - torch.mm(p_h_k.T, v_k)
 
 		# https://stats.stackexchange.com/a/191119
-		self.visible_bias += torch.sum(v - v_k)
-		self.hidden_bias += torch.sum(p_h - p_h_k)
+		self.visible_bias += torch.sum((v - v_k), 0)
+		self.hidden_bias += torch.sum((p_h - p_h_k), 0)
 

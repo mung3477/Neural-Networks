@@ -37,7 +37,7 @@ def MNIST_RBM(num_v: int = 20, n: int = 1):
 	v_0 = torch.Tensor(X_binary[np.random.randint(low=0, high=len(X), size=(num_v))])
 
 	rbm = RBM(784, 128)
-	v_k = train(rbm, v_0, n, num_epoch=30)
+	v_k = train(rbm, v_0, n)
 
 	show(make_grid(v_0.view(-1, 1, 28, 28).data))
 	show(make_grid(v_k.view(-1, 1, 28, 28).data))
