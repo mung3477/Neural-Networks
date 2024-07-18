@@ -17,6 +17,15 @@ You can run the code by running the following command:
 python3 -m hopfield_network.run_using_MNSIT
 ```
 
+### Restricted boltzmann machine
+
+Paper from [here](https://web.archive.org/web/20110718022336/http://learning.cs.toronto.edu/~hinton/absps/cogscibm.pdf), implemented based on [this paper](https://www.cs.toronto.edu/~hinton/absps/guideTR.pdf).
+You can run the code by running the following command:
+
+```
+python3 -m restricted_boltzmann_machine.run_using_MNSIT
+```
+
 ## Dataset
 
 -   [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
